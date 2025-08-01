@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-
+template<typename t>
 class Queue{
     private:
-    int front,rear,arr[100];
+    int front,rear;
+    t arr[100];
     public:
     Queue(){
         front=0;
@@ -36,7 +37,8 @@ class Queue{
 
 int main() {
 	// your code goes here
-    Queue q;
+    Queue<int>q;
+    //we can use any type of data type
     q.enqueue(10);
     q.enqueue(20);
     q.enqueue(30);
